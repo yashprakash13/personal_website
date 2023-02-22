@@ -29,7 +29,7 @@ function App() {
             target="_blank"
             href="https://ipom.medium.com"
           >
-            Medium
+            Blog
           </a>
           <a
             className="underline"
