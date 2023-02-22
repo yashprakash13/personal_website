@@ -7,7 +7,7 @@ function App() {
   }, [])
 
   return (
-    <div className="App">
+    <div className="App ">
       <div className="flex flex-col gap-10 mx-5 md:mx-auto my-5 items-center">
         <div className="flex gap-5 items-center text-lg font-bitter">
           <a
