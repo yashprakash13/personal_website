@@ -29,4 +29,4 @@ jobs:
         with:
           cmd: build
       - name: Copy folder to where nginx expects it to be
-        run: cp -r ${{env.COPY_FROM_FOLDER}} ${{env.COPY_TO_FOLDER}}
+        run: cp -r ${{secrets.COPY_FROM_FOLDER}} ${{secrets.COPY_TO_FOLDER}}
