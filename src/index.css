@@ -4,3 +4,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  background-color: white;
+  background-image: url(assets/bg-grain.png);
+  mix-blend-mode: multiply;
+}

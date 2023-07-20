@@ -25,9 +25,9 @@ function App() {
     },
   ])
   return (
-    <>
+    <div className="container mx-auto py-3 h-screen bg-[url(assets/bg-grain.png)] bg-[#ffffff] bg-blend-multiply)]">
       <RouterProvider router={router} />{" "}
-    </>
+    </div>
   )
 }
 
