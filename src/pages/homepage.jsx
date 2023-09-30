@@ -1,6 +1,8 @@
 import React from "react"
 import SmallArrow from "../assets/SmallArrow"
 import EllipsisHorizontal from "../assets/EllipsisHorizontal"
+import LinkSingle from "../components/LinkSingle"
+import MediumArrow from "../assets/MediumArrow"
 
 const HomePage = () => {
   return (
@@ -58,7 +60,7 @@ const HomePage = () => {
               href="https://ipom.medium.com"
             >
               <SmallArrow />
-              writing
+              blog
             </a>
             <a
               className="hover:underline hover:text-black inline-flex items-center gap-1"
@@ -66,23 +68,41 @@ const HomePage = () => {
               href="https://codecast.substack.com"
             >
               <SmallArrow />
-              newsletter
+              codecast
             </a>
           </div>
         </div>
       </div>
       <div className="flex flex-col gap-11">
+        <div className="flex flex-wrap gap-5 justify-start items-center">
+          <LinkSingle text={"Product Designer"} />
+          <LinkSingle text={"Software Engineer"} />
+          <LinkSingle text={"Technical Writer"} />
+        </div>
         <div className="font-bold text-4xl md:text-5xl lg:text-7xl font-alegreya md:leading-[1.25] lg:leading-[1.25]">
-          Yash Prakash is a full-stack software engineer and writer blending
-          code, content and creativity.
+          Yash is a full-stack software engineer and writer blending code,
+          content and creativity.
         </div>
         <div className="text-xl md:text-2xl lg:text-4xl font-bitter text-[#7d7c7c] md:leading[1.25] lg:leading-[1.3]">
           I love software. Love building it, talking about it, and writing about
-          it. <br /> <br /> I've helped 38 brands (especially startups!) find
-          their creative expression and bring their products and services under
-          the curious eyes of their enthusiastic audience.
+          it. <br /> <br /> I help startups and digital agencies find their
+          creative expression and bring their products and services under the
+          curious eyes of their enthusiastic audience.
           <br />
           <br />
+        </div>
+        <div className="text-lg md:text-xl lg:text-2xl font-bitter flex flex-col lg:flex-row lg:items-center gap-7">
+          <span className="opacity-50 uppercase tracking-wide">
+            Got a project?
+          </span>
+
+          <a
+            href="https://www.accelerationsuite.com/"
+            target="_blank"
+            className="relative w-fit font-bitter inline-flex gap-3 items-center px-4 py-2 md:px-7 md:py-3 lg:px-9 lg:py-4 border-2 border-black cursor-pointer transition-colors before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-black before:transition-transform before:duration-700 before:content-[''] hover:text-white before:hover:scale-x-100"
+          >
+            Let's work together <MediumArrow />
+          </a>
         </div>
       </div>
       <div className="flex justify-between items-center font-bitter w-full text-[#8b8a8a] text-sm">
@@ -119,7 +139,7 @@ const HomePage = () => {
               href="https://ipom.medium.com"
             >
               <SmallArrow />
-              writing
+              blog
             </a>
             <a
               className="hover:underline hover:text-black inline-flex items-center gap-1"
